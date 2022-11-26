@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Conditionals</title>
+</head>
+<body>
+  <script>
+    const age = 38;
+    if (age < 18) {
+      Text = 'A child';
+    } else {
+      Text = 'An adult';
+    }
+    console.log(Text);
+
+    const student1Score = 50;
+    if (student1Score >= 70) {
+      Text = 'Congrats you received a passing grade!';
+    } else {
+      Text = 'Oh no you failed!';
+    }
+    console.log(Text);
+
+    const student2Score = 70;
+    if (student2Score < 60) {
+      Text = 'F';
+    } else if (student2Score < 70) {
+      Text = 'D';
+    } else if (student2Score < 80) {
+      Text = 'C';
+    } else if (student2Score < 90) {
+      Text = 'B';
+    } else if (student2Score < 100) {
+      Text = 'A';
+    } else {
+      Text = 'A++';
+    }
+    console.log(Text);
+
+    const season = 'winter';
+    if (season === 'summer') {
+      Text = 'it\'s hot today';
+    } else if (season === 'spring') {
+      Text = 'the flowers are blooming';
+    } else if (season === 'autumn') {
+      Text = 'the leaves are changing colors';
+    } else if (season === 'winter') {
+      Text = 'it\'s cold today';
+    } else {
+      Text = 'please enter a valid season';
+    }
+    console.log(Text);
+
+    const dayOfTheWeek = 'wednesday';
+    if (dayOfTheWeek === 'saturday' || dayOfTheWeek === 'sunday') {
+      Text = 'have a good weekend!';
+    } else {
+      Text = 'It\'s a weekday!';
+    }
+    console.log(Text);
+  </script>
+</body>
+</html>
