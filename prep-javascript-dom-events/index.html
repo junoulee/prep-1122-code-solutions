@@ -7,18 +7,17 @@
   <button class="hello-world-btn">Hello World!</button>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      console.log('content loaded!');
     });
-    console.log('content loaded!');
 
-    window.addEventListener('mousemove', e => {
+    window.addEventListener('mousemove', function () {
       console.log('mouse is moving!');
     });
 
-    const $helloWorld = document.querySelector('.button');
-    console.log($helloWorld);
+    var $helloWorld = document.querySelector('.hello-world-btn');
 
-    window.addEventListener('click', function () {
-      console.log('hello world!');
+    $helloWorld.addEventListener('click', function () {
+      console.log('hello world');
     });
   </script>
 </body>
